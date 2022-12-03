@@ -1,5 +1,5 @@
 {% set name = "napari-threedee" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-threedee-{{ version }}.tar.gz
-  sha256: 7b468a891d5581f3c2446cfd05a58d62812e817aaa2b01b73f242449126ea5fd
+  sha256: 3465b48647e460f01587a92783b139decf707c86f48ae7188ca592f3ac8b343d
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - einops
     - npe2
     - napari
     - numpy
