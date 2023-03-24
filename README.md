@@ -1,11 +1,11 @@
-About napari-threedee
-=====================
+About napari-threedee-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-threedee-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/alisterburt/napari-threedee
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-threedee-feedstock/blob/main/LICENSE.txt)
 
 Summary: A suite of useful tools based on 3D interactivity in napari
 
