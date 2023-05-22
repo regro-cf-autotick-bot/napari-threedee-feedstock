@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.8
     - einops
+    - igl
     - npe2
     - napari
     - numpy
