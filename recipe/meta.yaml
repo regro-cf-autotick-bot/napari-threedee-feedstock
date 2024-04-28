@@ -1,13 +1,13 @@
 {% set name = "napari-threedee" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.17" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-threedee-{{ version }}.tar.gz
-  sha256: e03e74c325f918cb5645f7204068a5e85d9be0a10365cceb3fd8f465d91c39f8
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 151991bb1bbac6e24f6561c7b87c4a2ba757d5572790b9f408d7a18ab83da69c
 
 build:
   noarch: python
@@ -22,19 +22,29 @@ requirements:
   run:
     - python >=3.8
     - einops
-    - npe2
+    # - igl # feedstock currently abandoned
+    - magicgui
     - napari
     - numpy
+    - pandas
+    - pydantic
+    - psygnal
     - qtpy
+    - scipy
+    - superqt
+    - vispy
+    - zarr
     - morphosamplers
 
 test:
   imports:
     - napari_threedee
-  commands:
-    - pip check
+  # commands:
+  # pip check fails to recognize igl as libigl
+  #  - pip check
   requires:
-    - pip
+    - pyqt
+  #  - pip
 
 about:
   home: https://github.com/alisterburt/napari-threedee
