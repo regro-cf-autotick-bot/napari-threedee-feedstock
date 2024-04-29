@@ -3,7 +3,7 @@ About napari-threedee-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-threedee-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/alisterburt/napari-threedee
+Home: https://github.com/napari-threedee/napari-threedee
 
 Package license: BSD-3-Clause
 
