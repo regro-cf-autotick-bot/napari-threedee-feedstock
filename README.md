@@ -145,4 +145,5 @@ Feedstock Maintainers
 
 * [@alisterburt](https://github.com/alisterburt/)
 * [@kevinyamauchi](https://github.com/kevinyamauchi/)
+* [@psobolewskiPhD](https://github.com/psobolewskiPhD/)
 

@@ -1,5 +1,5 @@
 {% set name = "napari-threedee" %}
-{% set version = "0.0.17" %}
+{% set version = "0.0.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 151991bb1bbac6e24f6561c7b87c4a2ba757d5572790b9f408d7a18ab83da69c
+  sha256: 6e204a95343ba8fa41ffaa34ee3254280f635dadebcbd41ddd2f6a0b40d91071
 
 build:
   noarch: python
