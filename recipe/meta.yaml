@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
   sha256: c6e9f9262e2c627473b15dc8de615549b1b4cdbf14744659b5eda5ffe5446c6a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools-scm
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - einops
     # - igl # feedstock currently abandoned
     - magicgui
@@ -45,6 +45,7 @@ test:
   requires:
     - pyqt
   #  - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/alisterburt/napari-threedee
